@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>wss</title>
+	<style type="text/css">
+		body {background-color :black;}
+
+		#box {width: 100%; height:100%; position: absolute; background: black; z-index: 1; top: 0; left: 0;}
+
+		#bad {width: 800px; height: 100px;  position: absolute; line-height: 100px;  text-align: center;  font-size: 5em; font-weight: bold; z-index: 1; top: 510px; left: 440px; opacity: 0;
+			animation: bad 0.5s infinite;  }
+		@keyframes bad {
+			0% {color : red; }
+			
+			20% {color: yellow; }
+			40% {color: blue; }
+			60% {color: green; }
+			80% {color: purple; }
+			100% {color: #00E1FF; }
+		}
+
+		#bad1 {width: 800px; height: 100px;  position: absolute; line-height: 100px;  text-align: center;  font-size: 5em;font-weight: bold; z-index: 1; top: 590px; left: 440px; opacity: 0;
+			animation: bad 0.5s infinite;   }
+		@keyframes bad {
+			0% {color : red; }
+			20% {color: yellow; }
+			40% {color: blue; }
+			60% {color: green; }
+			80% {color: purple; }
+			100% {color: #00E1FF; }
+		}
+
+		#bad2 {width: 800px; height: 100px;  position: absolute; line-height: 100px;  text-align: center;  font-size: 1.5em;font-weight: bold; z-index: -1; top: 280px; left: 725px;
+			animation: bad1 1s infinite;   }
+		
+		@keyframes bad1 {
+			0% {color : purple; }
+			20% {color: green; }
+			40% {color:#00E1FF;  }
+			60% {color: yellow; }
+			80% {color: blue; }
+			100% {color: red; }
+		}
+		
+		#bad3 {  position: absolute; line-height: 150px;  text-align: center;  font-size: 9.5em; font-weight: bold; z-index: 1; bottom: 80px; right: 0px; opacity: 0;
+			animation: bad2 1s infinite;   }
+		
+		@keyframes bad2 {
+			0% {color : #00E1FF; }
+			20% {color: green; }
+			40% {color: red; }
+			60% {color: blue; }
+			80% {color: purple; }
+			100% {color: yellow; }
+		}
+
+		#bad4 {  position: absolute; line-height: 150px;  text-align: center;  font-size: 1.8em; font-weight: bold; z-index: -1; top: 630px; left: 450px;
+			animation: bad3 0.8s infinite;   }
+		
+		@keyframes bad3 {
+			0% {color : #00E1FF; }
+			20% {color: green; }
+			40% {color: red; }
+			60% {color: blue; }
+			80% {color: purple; }
+			100% {color: yellow; }
+		}
+
+		#bad5 {  position: absolute; line-height: 150px;  text-align: center;  font-size: 3.3em; font-weight: bold; z-index: -1; top: 170px; left: 40px; transform:rotate(90deg);
+			animation: bad4 0.5s infinite;  }
+		
+		@keyframes bad4 {
+			0% {color : green; }
+			20% {color: blue; }
+			40% {color: yellow; }
+			60% {color: #00E1FF; }
+			80% {color: purple; }
+			100% {color: red; }
+		}
+
+		#bad6 {  position: absolute; line-height: 150px;  text-align: center;  font-size: 1.1em; font-weight: bold; z-index: -1; top: 585px; left: -50px; transform:rotate(90deg);
+			animation: bad5 0.5s infinite;   }
+		
+		@keyframes bad5 {
+			0% {color : green; }
+			20% {color: blue; }
+			40% {color: yellow; }
+			60% {color: #00E1FF; }
+			80% {color: purple; }
+			100% {color: red; }
+		}
+
+		#bad7 {  position: absolute; line-height: 150px;  text-align: center;  font-size: 2.8em; font-weight: bold; z-index: 1; top: -35px; left: 1000px; opacity: 0;
+			animation: bad6 0.3s infinite;   }
+		
+		@keyframes bad6 {
+			0% {color : green; }
+			20% {color: blue; }
+			40% {color: yellow; }
+			60% {color: #00E1FF; }
+			80% {color: purple; }
+			100% {color: red; }
+		}
+		
+		
+		#pic1 {width: 480px; height: 478px; position: absolute; top: 0px; left: 300px; opacity: 0; z-index: 1;
+			animation: pic1 0.5s; }
+		
+		#pic2 {width: 400px; height: 233px; position: absolute; top: 80px; left: 1000px; opacity: 0; }
+		#pic3 {width: 500px; height: 208px; position: absolute; top: 300px; left: 500px; z-index: 2;}
+		#pic3:hover {cursor: pointer;}
+		#pic4 {width: 500px; height: 283px; position: absolute; top: 250px;  right: 0px; opacity: 0;}
+		#pic5 {width: 500px; height: 235px; position: absolute; top: 700px;  right: 700px; opacity: 0;}
+		#pic6 {width: 268px; height: 291px; position: absolute; top: 300px; right: 400px; opacity: 0;}
+		#pic7 {width: 320px; height: 320px; position: absolute; top: 500px; left: 120px; opacity: 0;}
+	</style>
+	
+</head>
+<body>
+	<div id="box"></div>
+
+	<div id="bad">WHY SO SERIOUS?</div>
+	<div id="bad1">WHY SO SERIOUS?</div>
+	<div id="bad2">WHY SO SERIOUS?</div>
+	<div id="bad3">WHY SO <br>SERIOUS?</div>
+	<div id="bad4">WHY SO SERIOUS?</div>
+	<div id="bad5">WHY SO SERIOUS?</div>
+	<div id="bad6">WHY SO SERIOUS?   WHY SO SERIOUS?</div>
+	<div id="bad7">WHY SO SERIOUS?</div>
+
+	<img src="1.gif" id="pic1">
+	<img src="2.gif" id="pic2">
+	<img src="3.gif" id="pic3">
+	<img src="4.gif" id="pic4">
+	<img src="5.gif" id="pic5">
+	<img src="6.gif" id="pic6">
+	<img src="7.gif" id="pic7">
+	
+	<audio id="gang" >
+		<source src="gang.mp3" type="audio/mpeg">
+	</audio>
+
+	
+
+	<script type="text/javascript">
+		for (var i = 0;  i<7; i++) {
+			var a = document.getElementById("bad2");
+			var b = a.cloneNode(true) ; 
+			b. style.top = i*30 + 280 + "px";
+			b. style.opacity = 1;
+			document.body.appendChild(b);
+
+		}
+	</script>
+
+	<script type="text/javascript">
+		for (var i = 0;  i<7; i++) {
+			var a = document.getElementById("bad4");
+			var b = a.cloneNode(true) ; 
+			b. style.top = i*30 + 630 + "px";
+
+			document.body.appendChild(b);
+
+		}
+	</script>
+
+	<script type="text/javascript">
+		for (var i = 0;  i<6; i++) {
+			var a = document.getElementById("bad5");
+			var b = a.cloneNode(true) ; 
+			b.style.left = i*40 -200 + "px";
+			b.style.transform = "rotate(90deg)";
+			document.body.appendChild(b);
+
+		}
+	</script>
+
+	<script type="text/javascript">
+		for (var i = 0;  i<6; i++) {
+			var a = document.getElementById("bad6");
+			var b = a.cloneNode(true) ; 
+			b.style.left = i*15 -140 + "px";
+			b.style.transform = "rotate(90deg)";
+			document.body.appendChild(b);
+
+		}
+	</script>
+
+	<script type="text/javascript">
+		var toggle = "off";
+
+		pic3.onclick = function(){
+			if (toggle == "off"){
+				box.style.opacity = 0;
+				bad.style.opacity = 1;
+				bad1.style.opacity = 1;
+				bad3.style.opacity = 1;
+				bad7.style.opacity = 1;
+
+				pic1.style.opacity = 1;
+				pic2.style.opacity = 1;
+				
+				pic4.style.opacity = 1;
+				pic5.style.opacity = 1;
+				pic6.style.opacity = 1;
+				pic7.style.opacity = 1;
+
+				
+				
+				gang.play();
+				toggle = "on";
+			}else{
+				box.style.opacity = 1;
+				bad.style.opacity = 0; 
+				bad1.style.opacity = 0;
+				bad3.style.opacity = 0;
+				bad7.style.opacity = 0;
+
+				pic1.style.opacity = 0;
+				pic2.style.opacity = 0;
+				
+				pic4.style.opacity = 0;
+				pic5.style.opacity = 0;
+				pic6.style.opacity = 0;
+				pic7.style.opacity = 0;			
+				
+				gang.load();
+				toggle = "off";
+			}
+
+		}
+	</script>
+	
+</body>
+</html>
